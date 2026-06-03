@@ -291,7 +291,9 @@ document.addEventListener('DOMContentLoaded', () => {
     jpos:'<ruby>自立<rt>じりつ</rt></ruby><br>(POS)',
     pos:'POS',
     seitan:'<ruby>生単<rt>せいたん</rt></ruby>',
-    sogo:'<ruby>総合<rt>そうごう</rt></ruby>'
+    sogo:'<ruby>総合<rt>そうごう</rt></ruby>',
+    poolOnly:'プール',
+    gakunen:'<ruby>学年<rt>がくねん</rt></ruby>'
   };
 
   // 写真どおりの時間割（null は黒いマス＝授業なし）
@@ -307,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentView = 'week';
   let currentTarget = null;
 
-  const subjectCards = [S.taiiku, S.kokugo, S.ongaku, S.zuko, S.sansu, S.jiritsu, S.pool, S.jpos, S.pos, S.seitan, S.sogo];
+  const subjectCards = [S.taiiku, S.kokugo, S.ongaku, S.zuko, S.sansu, S.jiritsu, S.pool, S.jpos, S.pos, S.seitan, S.sogo, S.poolOnly, S.gakunen];
   const timeCards = ['11:30', '13:00', '14:00', '14:30', '15:00', '15:30'];
 
   const lunchCell = (span) => '<tr><td class="lunch-cell" colspan="' + span + '"><ruby>給食<rt>きゅうしょく</rt></ruby>・<ruby>昼休<rt>ひるやす</rt></ruby>み</td></tr>';
